@@ -15,6 +15,54 @@ html, body {
     width: 100%;
 }
 
+/** Common **/
+.btn-common {
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    padding: 12px 32px;
+}
+
+.btn-common:hover {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.btn-corner-border {
+    position: relative;
+    margin: 20px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: white;
+    padding: 0;
+    box-sizing: content-box;
+    border: 2px solid transparent;
+    padding: 12px 32px;
+    font-size: 28px;
+}
+
+.btn-corner-border::before, .btn-corner-border::after {
+    display: block;
+    content: "";
+    width: 32px;
+    height: 32px;
+    position: absolute;
+}
+
+.btn-corner-border::before {
+    top: -2px;
+    left: -2px;
+    border-top: 1px solid white;
+    border-left: 1px solid white;
+}
+.btn-corner-border::after {
+    bottom: -2px;
+    right: -2px;
+    border-bottom: 1px solid white;
+    border-right: 1px solid white;
+}
+/** End Common **/
+
 /** Header **/
 .header {
     height: 150px;
@@ -63,18 +111,18 @@ html, body {
 }
 /** End Header **/
 
-/** Top Slider **/
-#top-slider .carousel-indicators li {
+/** Slider **/
+.carousel-indicators li {
     width: 12px;
     height: 12px;
     border-radius: 50%;
     opacity: 1;
 }
 
-#top-slider .carousel-indicators li.active {
+.carousel-indicators li.active {
     background-color: #3a3a3c;
 }
-/** End Top Slider **/
+/** End Slider **/
 
 /** Feature Products **/
 .feature-product {
@@ -121,4 +169,92 @@ html, body {
 .feature-product.right {
     padding-left: 48px;
 }
+
+.section-title {
+    text-align: center;
+    margin: 40px auto;
+    color: #ffffff;
+}
 /** End Feature Products **/
+
+/** About Us **/
+.about-us {
+    background: url(../img/about-us.png) no-repeat;
+    background-size: contain;
+    height: 532px;
+}
+/** End About Us **/
+
+/** Events **/
+.event {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 32px;
+}
+
+.event img {
+    width: 100%;
+    margin-bottom: 32px;
+}
+
+.event p {
+    text-align: center;
+    color: #ffffff;
+    font-size: 14px;
+}
+
+.event .btn-common {
+    max-width: 250px;
+    margin-bottom: 16px;
+}
+/** End Events **/
+
+/** Customer **/
+.customer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 32px;
+    color: #ffffff;
+}
+
+.customer img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.custom-carousel-indicators {
+    position: relative;
+}
+
+.customer h3 {
+    font-size: 16px;
+}
+
+.customer h4 {
+    font-size: 15px;
+}
+
+.customer p {
+    font-size: 12px;
+    text-align: center;
+}
+
+.customer hr {
+    margin: 0;
+    width: 60%;
+    height: 0.5px;
+    background-color: #ffffff;
+    border-top: 0;
+    margin-bottom: 20px;
+}
+
+#customer-slider .carousel-inner {
+    margin-bottom: 24px;
+}
+/** End Customer **/
