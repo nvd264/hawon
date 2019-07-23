@@ -15,11 +15,9 @@
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
-    <link
-      href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="src/css/style.css" />
+    <script defer src="src/lib/font-awesome/js/all.min.js"></script>
     <title>Hanwon</title>
   </head>
   <body>
@@ -40,7 +38,10 @@
         <div class="col-sm-12 col-xs-12 col-md-9 col-lg-9">
           <div class="menu">
             <!-- Search -->
-            <input class="search-product" type="text" placeholder="Tìm kiếm" />
+            <div class="inp-wrapper">
+                <i class="fas fa-search"></i>
+                <input class="hawon-input" type="text" placeholder="Tìm kiếm" />
+            </div>
             <!-- End Search -->
             <div class="clearfix"></div>
             <!-- Menu -->
@@ -143,7 +144,7 @@
               <a href="#">Chi tiết sản phẩm</a>
             </div>
             <div class="feature-product--image">
-              <img src="src/img/fp1.png" />
+              <img class="fp1" src="src/img/fp1.png" />
             </div>
           </div>
         </div>
@@ -159,7 +160,7 @@
               <a href="#">Chi tiết sản phẩm</a>
             </div>
             <div class="feature-product--image">
-              <img src="src/img/fp1.png" />
+              <img class="fp2" src="src/img/fp2.png" />
             </div>
           </div>
         </div>
@@ -175,7 +176,7 @@
               <a href="#">Chi tiết sản phẩm</a>
             </div>
             <div class="feature-product--image">
-              <img src="src/img/fp1.png" />
+              <img class="fp3" src="src/img/fp3.png" />
             </div>
           </div>
         </div>
@@ -191,7 +192,7 @@
               <a href="#">Chi tiết sản phẩm</a>
             </div>
             <div class="feature-product--image">
-              <img src="src/img/fp1.png" />
+              <img class="fp4" src="src/img/fp4.png" />
             </div>
           </div>
         </div>
@@ -200,7 +201,15 @@
     <!-- End Feature Products -->
 
     <!-- About Us -->
-    <section class="about-us"></section>
+    <section class="about-us">
+      <div class="col-xs-12 col-sm-12 col-md-10 col-lg-10">
+          <div class="about-us-info">
+              <h3>VỀ HAWON</h3>
+              <p>Các sản phẩm của Hawon được làm từ mạt vàng 24K nhập từ Spanish cùng với tinh chất sâm nhập từ Korean. Đơn vị sản xuất của Hawon là nhà máy đạt chuẩn CGMP.  Tất cả sản phẩm của chúng tối đều là sản phẩm đạt tiêu chuẩn của FDA - USA. </p>
+              <p>Với ứng dụng công nghệ Block chain cho phép truy xuất nguồn gốc sản phẩm và Automation Marketing. Cộng sự của chúng Hawon là đội ngũ y bác sỹ & chuyên viên da liễu đồng hành trong quá trình sử dụng sản phẩm. Công nghệ chống hàng giả by Hawon Dev.1.0.19. Bên cạnh đó, chúng tôi cho phép chia sẻ kiến thức bằng nền tảng E-Learning cho cộng đồng và hệ thống bán hàng.</p>
+          </div>
+      </div>
+    </section>
     <!-- End About Us -->
 
     <!-- Events -->
@@ -241,6 +250,7 @@
           </div>
         </div>
       </div>
+      <br/>
     </div>
     <!-- End Events -->
 
@@ -255,7 +265,7 @@
       </div>
     </div>
 
-    <!-- Top Slider -->
+    <!-- Customer Slider -->
     <div id="customer-slider" class="carousel slide" data-ride="carousel">
       <div class="carousel-inner">
         <div class="carousel-item active">
@@ -395,8 +405,62 @@
         <li data-target="#customer-slider" data-slide-to="2"></li>
       </ol>
     </div>
-    <!-- End Top Slider -->
+    <!-- End Customer Slider -->
     <!-- End Customers -->
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <div class="logo">
+              <img src="src/img/logo.png" />
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+            <div class="hawon-info">
+              <h2 class="company-name">
+                CÔNG TY CỔ PHẦN DƯỢC MỸ PHẨM QUỐC TẾ HAWON
+              </h2>
+              <p>
+                Địa chỉ: Lầu 3 - 35 Officetel, Cao ốc Sunrise City - North, Số
+                27 Nguyễn Hữu Thọ, Quận 7, Thành phố Hồ Chí Minh.
+              </p>
+              <p>Email: info@hawongold.com</p>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+            <div class="contract">
+              <div class="inp-wrapper">
+                  <i class="fas fa-envelope"></i>
+                  <input
+                    type="text"
+                    class="hawon-input reg-receive-email"
+                    placeholder="Đăng ký email nhận ưu đãi"
+                />
+              </div>
+              <p>Liên hệ Tư Vấn - Mua Hàng</p>
+              <p>- Tư vấn sản phẩm: 0901 001 050</p>
+              <p>- Tư vấn tham gia hệ thống bán hàng: 094 531 0123</p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <div class="socials">
+                <ul>
+                    <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fab fa-youtube-square"></i></a></li>
+                  </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- End Foorer -->
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
