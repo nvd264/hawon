@@ -86,7 +86,7 @@ html, body {
 
 /** Header **/
 .header {
-    height: 150px;
+    /* height: 150px; */
 }
 
 .logo {
@@ -228,9 +228,7 @@ html, body {
 
 /** About Us **/
 .about-us {
-    background: url(../img/about-us.png) no-repeat;
-    background-size: contain;
-    height: 532px;
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -238,14 +236,23 @@ html, body {
     flex-direction: column;
 }
 
-.about-us-info {
+.about-us img {
     width: 100%;
+}
+
+.about-us-info {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
     text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     height: 100%;
+    padding-left: 80px;
+    padding-right: 80px;
 }
 /** End About Us **/
 
@@ -384,3 +391,29 @@ footer .logo {
     margin: 40px 22px 22px 22px;
 }
 /** End Socials **/
+
+/** Mobile and Tablet **/
+@media (max-width: 768px) {
+    .feature-product.right {
+        padding-left: 0;
+    }
+    .feature-product.left {
+        padding-right: 0;
+    }
+    .inp-wrapper {
+        float: left;
+    }
+    .header .logo {
+        padding-top: 36px;
+    }
+    .contract {
+        padding-left: 0;
+        padding-top: 36px;
+    }
+    .about-us-info {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+/** End Mobile and Tablet **/
