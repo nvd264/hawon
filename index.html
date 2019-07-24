@@ -21,9 +21,27 @@
     <title>Hanwon</title>
   </head>
   <body>
+
+    <!-- Side Nav -->
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#">TRANG CHỦ</a>
+        <a href="#">SẢN PHẨM</a>
+        <a href="#">VỀ HAWON</a>
+        <a href="#">SỰ KIỆN & ƯU ĐÃI</a>
+        <a href="#">TẠP CHÍ</a>
+        <a href="#">CẢM NHẬN</a>
+        <a href="#">ĐẶT HÀNG</a>
+        <a href="#">NHẬN ƯU ĐÃI</a>
+      </div>
+    <!-- End Side Nav -->
+
     <nav class="navbar navbar-expand-lg navbar-light navbar-top">
+      <span class="mobile-nav" onclick="openNav()">&#9776;</span>
       <div class="container">
-        <div class="hotline">HOTLINE: 0901 001 050 - 094 531 0123</div>
+        <div class="hotline">
+          HOTLINE: 0901 001 050 - 094 531 0123
+        </div>
       </div>
     </nav>
 
@@ -488,5 +506,19 @@
 
     <!-- Initialize Firebase -->
     <script src="/__/firebase/init.js"></script>
+
+    <script>
+        function openNav() {
+          document.getElementById("mySidenav").style.width = "250px";
+          document.getElementById("main").style.marginLeft = "250px";
+          document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+        }
+
+        function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+          document.getElementById("main").style.marginLeft= "0";
+          document.body.style.backgroundColor = "white";
+        }
+        </script>
   </body>
 </html>
