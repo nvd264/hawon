@@ -194,7 +194,7 @@ html, body {
 }
 
 .feature-product--image img {
-    max-width: 100%;
+    width: 260px;
 }
 
 .feature-product--info {
@@ -204,6 +204,7 @@ html, body {
 .feature-product--info h3 {
     margin-bottom: 30px;
     font-weight: 300;
+    font-size: 24px;
 }
 
 .feature-product--info ul {
@@ -236,20 +237,25 @@ html, body {
     margin: 40px auto;
     color: #ffffff;
     font-weight: 300;
+    font-size: 24px;
+}
+
+.section-title span {
+    font-size: 24px;
 }
 
 .fp1 {
-    width: 90px;
+    /* width: 90px; */
 }
 .fp2 {
-    padding-top: 187px;
-    width: 120px;
+    /* padding-top: 187px; */
+    /* width: 120px; */
 }
 .fp3 {
-    width: 122px;
+    /* width: 122px; */
 }
 .fp4 {
-    width: 90px;
+    /* width: 90px; */
 }
 /** End Feature Products **/
 
@@ -280,6 +286,11 @@ html, body {
     height: 100%;
     padding-left: 80px;
     padding-right: 80px;
+}
+
+.about-us-info h3 {
+    font-weight: 300;
+    font-size: 24px;
 }
 /** End About Us **/
 
@@ -389,11 +400,13 @@ footer .logo {
     display: flex;
     flex-direction: column;
     padding-left: 40px;
+    align-items: flex-end;
 }
 
 .contract .inp-wrapper {
     width: 300px;
     margin-bottom: 8px;
+    overflow: auto;
 }
 /** End Contract **/
 
@@ -424,14 +437,13 @@ footer .logo {
     height: 100%;
     width: 250px;
     position: fixed;
-    z-index: 1;
+    z-index: 999;
     top: 0;
     left: -250px;
     background-color: #3a3a3c;
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
-    z-index: 16;
   }
 
   .sidenav a {
@@ -460,6 +472,10 @@ footer .logo {
     padding: 16px;
   }
 
+  .contract-wrapper {
+      width: 300px;
+  }
+
   @media screen and (max-height: 450px) {
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
@@ -467,6 +483,23 @@ footer .logo {
 /** End Side Nav **/
 
 /** Mobile and Tablet **/
+@media (max-width: 1024px) {
+    .feature-product {
+        flex-direction: column;
+    }
+    .feature-product--info {
+        order: 2;
+        text-align: center;
+    }
+    .feature-product--image img {
+        display: block;
+        margin: 0 auto;
+    }
+    .nav-link {
+        padding-right: 4px;
+        padding-left: 4px;
+    }
+}
 @media (max-width: 768px) {
     .feature-product.right {
         padding-left: 0;
@@ -483,6 +516,7 @@ footer .logo {
     .contract {
         padding-left: 0;
         padding-top: 36px;
+        align-items: flex-start;
     }
     .about-us-info {
         padding-left: 10px;
@@ -494,9 +528,22 @@ footer .logo {
     .mobile-nav {
         display: block;
     }
+    .btn-buy-product {
+        padding: 4px 16px;
+        min-width: 120px;
+    }
 }
 
-@media (max-width: 414px) {
+@media (max-width: 600px) {
+    .about-us {
+        height: 500px;
+    }
+    .about-us img {
+        height: 100%;
+    }
+}
+
+@media (max-width: 525px) {
     .about-us {
         height: 500px;
     }
@@ -508,6 +555,10 @@ footer .logo {
     }
     .hotline {
         font-size: 14px;
+    }
+    .btn-buy-product {
+        padding: 4px 16px;
+        min-width: 120px;
     }
 }
 /** End Mobile and Tablet **/

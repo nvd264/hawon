@@ -15,25 +15,29 @@
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="src/css/style.css" />
     <script defer src="src/lib/font-awesome/js/all.min.js"></script>
     <title>Hanwon</title>
   </head>
   <body>
-
     <!-- Side Nav -->
     <div id="mySidenav" class="sidenav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="#">TRANG CHỦ</a>
-        <a href="#">SẢN PHẨM</a>
-        <a href="#">VỀ HAWON</a>
-        <a href="#">SỰ KIỆN & ƯU ĐÃI</a>
-        <a href="#">TẠP CHÍ</a>
-        <a href="#">CẢM NHẬN</a>
-        <a href="#">ĐẶT HÀNG</a>
-        <a href="#">NHẬN ƯU ĐÃI</a>
-      </div>
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+        >&times;</a
+      >
+      <a href="#">TRANG CHỦ</a>
+      <a href="#">SẢN PHẨM</a>
+      <a href="#">VỀ HAWON</a>
+      <a href="#">SỰ KIỆN & ƯU ĐÃI</a>
+      <a href="#">TẠP CHÍ</a>
+      <a href="#">CẢM NHẬN</a>
+      <a href="#">ĐẶT HÀNG</a>
+      <a href="#" class="scroll-to-bottom">NHẬN ƯU ĐÃI</a>
+    </div>
     <!-- End Side Nav -->
 
     <nav class="navbar navbar-expand-lg navbar-light navbar-top">
@@ -57,8 +61,8 @@
           <div class="menu">
             <!-- Search -->
             <div class="inp-wrapper">
-                <i class="fas fa-search"></i>
-                <input class="hawon-input" type="text" placeholder="Tìm kiếm" />
+              <i class="fas fa-search"></i>
+              <input class="hawon-input" type="text" placeholder="Tìm kiếm" />
             </div>
             <!-- End Search -->
             <div class="clearfix"></div>
@@ -102,7 +106,7 @@
                     <a class="nav-link" href="#">ĐẶT HÀNG</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">NHẬN ƯU ĐÃI</a>
+                    <a class="nav-link scroll-to-bottom" href="#">NHẬN ƯU ĐÃI</a>
                   </li>
                 </ul>
               </div>
@@ -229,9 +233,21 @@
     <section class="about-us">
       <img src="src/img/about-us.png" />
       <div class="about-us-info">
-          <h3>VỀ HAWON</h3>
-          <p>Các sản phẩm của Hawon được làm từ mạt vàng 24K nhập từ Spanish cùng với tinh chất sâm nhập từ Korean. Đơn vị sản xuất của Hawon là nhà máy đạt chuẩn CGMP.  Tất cả sản phẩm của chúng tối đều là sản phẩm đạt tiêu chuẩn của FDA - USA. </p>
-          <p>Với ứng dụng công nghệ Block chain cho phép truy xuất nguồn gốc sản phẩm và Automation Marketing. Cộng sự của chúng Hawon là đội ngũ y bác sỹ & chuyên viên da liễu đồng hành trong quá trình sử dụng sản phẩm. Công nghệ chống hàng giả by Hawon Dev.1.0.19. Bên cạnh đó, chúng tôi cho phép chia sẻ kiến thức bằng nền tảng E-Learning cho cộng đồng và hệ thống bán hàng.</p>
+        <h3>VỀ HAWON</h3>
+        <p>
+          Các sản phẩm của Hawon được làm từ mạt vàng 24K nhập từ Spanish cùng
+          với tinh chất sâm nhập từ Korean. Đơn vị sản xuất của Hawon là nhà máy
+          đạt chuẩn CGMP.  Tất cả sản phẩm của chúng tối đều là sản phẩm đạt
+          tiêu chuẩn của FDA - USA.
+        </p>
+        <p>
+          Với ứng dụng công nghệ Block chain cho phép truy xuất nguồn gốc sản
+          phẩm và Automation Marketing. Cộng sự của chúng Hawon là đội ngũ y bác
+          sỹ & chuyên viên da liễu đồng hành trong quá trình sử dụng sản phẩm.
+          Công nghệ chống hàng giả by Hawon Dev.1.0.19. Bên cạnh đó, chúng tôi
+          cho phép chia sẻ kiến thức bằng nền tảng E-Learning cho cộng đồng và
+          hệ thống bán hàng.
+        </p>
       </div>
     </section>
     <!-- End About Us -->
@@ -274,7 +290,7 @@
           </div>
         </div>
       </div>
-      <br/>
+      <br />
     </div>
     <!-- End Events -->
 
@@ -457,28 +473,36 @@
           </div>
           <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
             <div class="contract">
-              <div class="inp-wrapper">
+              <div class="contract-wrapper">
+                <div class="inp-wrapper">
                   <i class="fas fa-envelope"></i>
                   <input
                     type="text"
                     class="hawon-input reg-receive-email"
                     placeholder="Đăng ký email nhận ưu đãi"
-                />
+                  />
+                </div>
+                <p>Liên hệ Tư Vấn - Mua Hàng</p>
+                <p>- Tư vấn sản phẩm: 0901 001 050</p>
+                <p>- Tư vấn tham gia hệ thống bán hàng: 094 531 0123</p>
               </div>
-              <p>Liên hệ Tư Vấn - Mua Hàng</p>
-              <p>- Tư vấn sản phẩm: 0901 001 050</p>
-              <p>- Tư vấn tham gia hệ thống bán hàng: 094 531 0123</p>
             </div>
           </div>
         </div>
         <div class="row">
           <div class="col">
             <div class="socials">
-                <ul>
-                    <li><a href="#"><i class="fab fa-facebook"></i></a></li>
-                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                    <li><a href="#"><i class="fab fa-youtube-square"></i></a></li>
-                  </ul>
+              <ul>
+                <li>
+                  <a href="#"><i class="fab fa-facebook"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fab fa-instagram"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fab fa-youtube-square"></i></a>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
@@ -489,9 +513,7 @@
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script
-      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-      crossorigin="anonymous"
+      src="https://code.jquery.com/jquery-3.1.0.js"
     ></script>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
@@ -514,15 +536,20 @@
     <script src="/__/firebase/init.js"></script>
 
     <script>
-        function openNav() {
-          document.getElementById("mySidenav").style.left = "0";
-          document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
-        }
+      function openNav() {
+        document.getElementById('mySidenav').style.left = '0';
+        document.body.style.backgroundColor = 'rgba(0,0,0,0.4)';
+      }
 
-        function closeNav() {
-          document.getElementById("mySidenav").style.left = "-250px";
-          document.body.style.backgroundColor = "#d7be96";
-        }
-        </script>
+      function closeNav() {
+        document.getElementById('mySidenav').style.left = '-250px';
+        document.body.style.backgroundColor = '#d7be96';
+      }
+
+      $('.scroll-to-bottom').click(function(e) {
+        $('html, body').animate({ scrollTop: $(document).height() }, 1000);
+        closeNav();
+      });
+    </script>
   </body>
 </html>
