@@ -30,11 +30,11 @@
         >&times;</a
       >
       <a href="#">TRANG CHỦ</a>
-      <a href="#">SẢN PHẨM</a>
-      <a href="#">VỀ HAWON</a>
-      <a href="#">SỰ KIỆN & ƯU ĐÃI</a>
+      <a href="#featured-products" class="scroll-to">SẢN PHẨM</a>
+      <a href="#about-us" class="scroll-to">VỀ HAWON</a>
+      <a class="scroll-to" href="#events">SỰ KIỆN & ƯU ĐÃI</a>
       <a href="#">TẠP CHÍ</a>
-      <a href="#">CẢM NHẬN</a>
+      <a class="scroll-to" href="#customers">CẢM NHẬN</a>
       <a href="#">ĐẶT HÀNG</a>
       <a href="#" class="scroll-to-bottom">NHẬN ƯU ĐÃI</a>
     </div>
@@ -67,7 +67,7 @@
             <!-- End Search -->
             <div class="clearfix"></div>
             <!-- Menu -->
-            <nav class="navbar navbar-expand-lg">
+            <nav class="navbar navbar-expand-lg navbar-desktop">
               <button
                 class="navbar-toggler"
                 type="button"
@@ -88,22 +88,22 @@
                     >
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">SẢN PHẨM</a>
+                    <a href="#featured-products" class="scroll-to nav-link">SẢN PHẨM</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">VỀ HAWON</a>
+                    <a href="#about-us" class="nav-link scroll-to">VỀ HAWON</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">SỰ KIỆN & ƯU ĐÃI</a>
+                    <a class="nav-link scroll-to" href="#events">SỰ KIỆN & ƯU ĐÃI</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">TẠP CHÍ</a>
+                    <a class="nav-link scroll-to" href="#">TẠP CHÍ</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">CẢM NHẬN</a>
+                    <a class="nav-link scroll-to" href="#customers">CẢM NHẬN</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">ĐẶT HÀNG</a>
+                    <a class="nav-link scroll-to" href="#">ĐẶT HÀNG</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link scroll-to-bottom" href="#">NHẬN ƯU ĐÃI</a>
@@ -155,7 +155,7 @@
 
     <!-- Feature Products -->
     <div class="container">
-      <h3 class="section-title">SẢN PHẨM NỔI BẬT</h3>
+      <h3 class="section-title" id="featured-products">SẢN PHẨM NỔI BẬT</h3>
       <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
           <div class="feature-product left">
@@ -230,7 +230,7 @@
     <!-- End Feature Products -->
 
     <!-- About Us -->
-    <section class="about-us">
+    <section id="about-us" class="about-us">
       <img src="src/img/about-us.png" />
       <div class="about-us-info">
         <h3>VỀ HAWON</h3>
@@ -254,7 +254,7 @@
 
     <!-- Events -->
     <div class="container">
-      <h3 class="section-title">SỰ KIỆN & ƯU ĐÃI</h3>
+      <h3 class="section-title" id="events">SỰ KIỆN & ƯU ĐÃI</h3>
       <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
           <div class="event">
@@ -297,7 +297,7 @@
     <!-- Customers -->
     <div class="container">
       <div class="row">
-        <div class="col text-center section-title">
+        <div id="customers" class="col text-center section-title">
           <span class="btn-corner-border"
             ><span>CẢM NHẬN KHÁCH HÀNG</span></span
           >
@@ -549,6 +549,18 @@
       $('.scroll-to-bottom').click(function(e) {
         $('html, body').animate({ scrollTop: $(document).height() }, 1000);
         closeNav();
+      });
+
+      $('.scroll-to').on('click', function(e) {
+        e.preventDefault()
+        closeNav();
+        $('html, body').animate(
+          {
+            scrollTop: $($(this).attr('href')).offset().top,
+          },
+          500,
+          'linear'
+        )
       });
     </script>
   </body>

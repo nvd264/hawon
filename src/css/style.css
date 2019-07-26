@@ -144,6 +144,7 @@ html, body {
 .inp-wrapper .hawon-input {
     margin: 0;
     padding-left: 30px;
+    margin-bottom: 8px;
 }
 
 .inp-wrapper svg {
@@ -151,6 +152,31 @@ html, body {
     top: 6px;
     left: 8px;
     color: #3a3a3c;
+}
+
+.nav-link {
+    /* border: 1px solid transparent; */
+    position: relative;
+    transition: all 0.5s ease;
+}
+
+.nav-link:hover {
+    /* color: #3a3a3c; */
+    /* border: 1px solid #ffffff; */
+}
+.nav-link:after {
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 50%;
+    right:50%;
+    height: 2px;
+    background-color: #ffffff;
+    transition: all 0.5s ease;
+}
+.nav-link:hover:after {
+    left: 0;
+    right: 0;
 }
 /** End Header **/
 
@@ -242,20 +268,6 @@ html, body {
 
 .section-title span {
     font-size: 24px;
-}
-
-.fp1 {
-    /* width: 90px; */
-}
-.fp2 {
-    /* padding-top: 187px; */
-    /* width: 120px; */
-}
-.fp3 {
-    /* width: 122px; */
-}
-.fp4 {
-    /* width: 90px; */
 }
 /** End Feature Products **/
 
@@ -484,6 +496,15 @@ footer .logo {
 
 /** Mobile and Tablet **/
 @media (max-width: 1024px) {
+    .navbar-toggler {
+        display: none;
+    }
+    .navbar-desktop {
+        display: none;
+    }
+    .mobile-nav {
+        display: block;
+    }
     .feature-product {
         flex-direction: column;
     }
@@ -498,6 +519,11 @@ footer .logo {
     .nav-link {
         padding-right: 4px;
         padding-left: 4px;
+    }
+}
+@media (max-width: 992px) {
+    .navbar-desktop {
+        display: none;
     }
 }
 @media (max-width: 768px) {
@@ -525,9 +551,6 @@ footer .logo {
     .event {
         padding: 0;
     }
-    .mobile-nav {
-        display: block;
-    }
     .btn-buy-product {
         padding: 4px 16px;
         min-width: 120px;
@@ -549,9 +572,6 @@ footer .logo {
     }
     .about-us img {
         height: 100%;
-    }
-    .mobile-nav {
-        display: block;
     }
     .hotline {
         font-size: 14px;
