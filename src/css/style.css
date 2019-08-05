@@ -161,7 +161,7 @@ html, body {
 }
 
 .nav-link:hover {
-    /* color: #3a3a3c; */
+    color: #3a3a3c;
     /* border: 1px solid #ffffff; */
 }
 .nav-link:after {
@@ -215,10 +215,6 @@ html, body {
     margin: 40px auto;
 }
 
-.feature-product--image {
-    /* width: 90px; */
-}
-
 .feature-product--image img {
     width: 260px;
 }
@@ -244,10 +240,13 @@ html, body {
     color: #ffffff;
     border: 1px solid #ffffff;
     padding: 8px 24px;
+    transition: all 0.5s ease;
 }
 
 .feature-product--info a:hover {
     text-decoration: none;
+    background-color: #ffffff;
+    color: #d7be96;
 }
 
 .feature-product.left {
